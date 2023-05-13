@@ -87,7 +87,7 @@
                       showConfirmButton: false,
                   })
                 this.submitlogin= false;
-                 let rehref = 'http://player.kh88bet.net/?sid='+response.data.sessionid+'&uid='+response.data.userid+'&cert='+this.cert+'&language=EN'
+                 let rehref = 'https://player.kh88bet.net/?sid='+response.data.sessionid+'&uid='+response.data.userid+'&cert='+this.cert+'&language=EN'
                 window.location.href = rehref;
               }
               else{
@@ -175,7 +175,7 @@
         <div class="display-flex-center header-logo-limit logo-hide" style="justify-content: unset;">
           <div class="home-nav__icon-wrapper">
             <router-link to="/" class="nav-item nav-link ">
-            <img src="http://player.kh88bet.net/static/kh88bet/images/logo.gif" alt="Nature" class="responsive img-400" width="100">
+            <img src="https://player.kh88bet.net/static/kh88bet/images/logo.gif" alt="Nature" class="responsive img-400" width="100">
             </router-link>
           </div>
         </div>
@@ -193,7 +193,7 @@
       <div class="display-flex-center header-logo-limit hide-300">
         <div class="home-nav__icon-wrapper hide-400">
           <router-link to="/" class="nav-item nav-link ">
-          <img src="http://player.kh88bet.net/static/kh88bet/images/logo.gif" alt="Nature" class="responsive img-img" width="100">
+          <img src="https://player.kh88bet.net/static/kh88bet/images/logo.gif" alt="Nature" class="responsive img-img" width="100">
           </router-link>
         </div>
       </div>

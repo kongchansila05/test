@@ -99,7 +99,7 @@ export default {
                             <div v-for="(value, key, index) in info" :key="index">
                                 <div class="footer__logo">
                                 <a href="/" class="nuxt-link-exact-active nuxt-link-active">
-                                    <img src="http://player.kh88bet.net/static/kh88bet/images/logo.gif" style="width: 50%;padding-top: 10px;">
+                                    <img src="https://player.kh88bet.net/static/kh88bet/images/logo.gif" style="width: 50%;padding-top: 10px;">
                                 </a>
                                 </div>
                                 <div class="footer__about">

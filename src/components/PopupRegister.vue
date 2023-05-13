@@ -141,7 +141,7 @@ import { useRoute } from 'vue-router';
                         icon: 'success',
                         showConfirmButton: false,
                     })
-                  let rehref = 'http://player.kh88bet.net/?sid='+response.data.sessionid+'&uid='+response.data.userid+'&cert='+this.cert+'&language=EN'
+                  let rehref = 'https://player.kh88bet.net/?sid='+response.data.sessionid+'&uid='+response.data.userid+'&cert='+this.cert+'&language=EN'
                   window.location.href = rehref;
                 }
               });
@@ -214,7 +214,7 @@ import { useRoute } from 'vue-router';
                             icon: 'success',
                             showConfirmButton: false,
                         })
-                      let rehref = 'http://player.kh88bet.net/?sid='+response.data.sessionid+'&uid='+response.data.userid+'&cert='+this.cert+'&language=EN'
+                      let rehref = 'https://player.kh88bet.net/?sid='+response.data.sessionid+'&uid='+response.data.userid+'&cert='+this.cert+'&language=EN'
                       window.location.href = rehref;
                     }
                   });
