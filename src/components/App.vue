@@ -133,7 +133,7 @@
         },
         //=====footer=========
         getfooter(){
-          axios.get("http://admin.sharesport.news/api/footer").then((res)=>{
+          axios.get("https://admin.sharesport.news/api/footer").then((res)=>{
               this.footer = res.data;
           }).catch(function (error) {
               console.error(error);

@@ -64,7 +64,7 @@ export default {
       },
     //=====livestream=========
     getlivestream(){
-      axios.get("http://admin.sharesport.news/api/livestream").then((res)=>{
+      axios.get("https://admin.sharesport.news/api/livestream").then((res)=>{
       if(res.data.status == true){
         this.showlivestream= true;
         this.livestream = res.data.data;
@@ -85,7 +85,7 @@ export default {
     //=====the-end=========
     //=====highlight=========
     gethighlight(){
-      axios.get("http://admin.sharesport.news/api/livestream").then((res)=>{
+      axios.get("https://admin.sharesport.news/api/livestream").then((res)=>{
         if(res.data.status == true){
           this.showlivestream= true;
           this.highlights = res.data.data;
@@ -129,7 +129,7 @@ export default {
     //=====the-end=========
     //=====getbanner=========
     getbanner(){
-      fetch("http://admin.sharesport.news/api/banner")
+      fetch("https://admin.sharesport.news/api/banner")
       .then(res => res.json())
       .then(data => this.banner=data[0].photo)
       .then(data => console.log(data))
@@ -179,7 +179,7 @@ export default {
   <div class="video">
     <video src="/benner/sport.mp4" title="2m-sport" type="video/mp4" autoplay="autoplay" loop="loop" muted="muted" playsinline="" class="cursor-pointer" style="width:100%;"></video>
     
-    <!-- <a href="http://admin.sharesport.news/banner/sharesportbanner.mp4">
+    <!-- <a href="https://admin.sharesport.news/banner/sharesportbanner.mp4">
       <button type="button" class="bottom-right btn btn-primary">អានបន្ថែម</button>
     </a> -->
   </div>

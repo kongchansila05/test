@@ -36,7 +36,7 @@ export default {
   methods: {
     //=====highlight=========
     gethighlighthead(){
-      axios.get("http://admin.sharesport.news/api/highlight").then((res)=>{
+      axios.get("https://admin.sharesport.news/api/highlight").then((res)=>{
         this.highlightheads = res.data;
       }).catch(function (error) {
           console.error(error);
@@ -55,7 +55,7 @@ export default {
     //=====the-end=========
     //=====category=========
     getcategory(){
-      axios.get("http://admin.sharesport.news/api/category").then((res)=>{
+      axios.get("https://admin.sharesport.news/api/category").then((res)=>{
         this.categories = res.data;
       }).catch(function (error) {
           console.error(error);
@@ -67,7 +67,7 @@ export default {
       document.getElementById(event.id).style.cssText = 'background-color: #2f2151!important; color: white !important',
       this.method = true;
       this.gethighlight();
-      axios.get("http://admin.sharesport.news/api/highlight/category/" + event.id).then((res)=>{
+      axios.get("https://admin.sharesport.news/api/highlight/category/" + event.id).then((res)=>{
         if(res.data.status == true){
           this.highlightsWhereStatus = true;
           this.highlightsWhere = res.data.data;

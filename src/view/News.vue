@@ -55,7 +55,7 @@ const axios = require("axios");
     },
     //=====highlight=========
     gethighlighthead(){
-      axios.get("http://admin.sharesport.news/api/highlight").then((res)=>{
+      axios.get("https://admin.sharesport.news/api/highlight").then((res)=>{
         this.highlightheads = res.data;
       }).catch(function (error) {
           console.error(error);
@@ -64,7 +64,7 @@ const axios = require("axios");
     //=====the-end=========
     //=====highlight=========
     gethighlight(){
-      axios.get("http://admin.sharesport.news/api/highlight").then((res)=>{
+      axios.get("https://admin.sharesport.news/api/highlight").then((res)=>{
         this.highlights = res.data;
       }).catch(function (error) {
           console.error(error);
@@ -73,7 +73,7 @@ const axios = require("axios");
     //=====the-end=========
     //=====category=========
     getcategory(){
-      axios.get("http://admin.sharesport.news/api/category").then((res)=>{
+      axios.get("https://admin.sharesport.news/api/category").then((res)=>{
         this.categories = res.data;
       }).catch(function (error) {
           console.error(error);
@@ -82,7 +82,7 @@ const axios = require("axios");
     //=====the-end=========
     //=====Popular=========
     getPopular(){
-      axios.get("http://admin.sharesport.news/api/popular").then((res)=>{
+      axios.get("https://admin.sharesport.news/api/popular").then((res)=>{
         this.popular = res.data;
       }).catch(function (error) {
           console.error(error);

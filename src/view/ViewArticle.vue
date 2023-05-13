@@ -18,13 +18,13 @@
         // $("#mttitle").attr("content",""+localStorage.sharetitle+"");
         // $("#mttype").attr("content","website");
         // $("#mtdescription").attr("content",""+localStorage.sharedetail+"");
-        // $("#mtimage").attr("content","http://admin.sharesport.news/upload/"+localStorage.sharephoto+"");
+        // $("#mtimage").attr("content","https://admin.sharesport.news/upload/"+localStorage.sharephoto+"");
 
         $("#mturl").attr("content","http://kh.2m-sport.com/article/");
         $("#mttitle").attr("content","kongchansila");
         $("#mttype").attr("content","website");
         $("#mtdescription").attr("content","kongchansila");
-        $("#mtimage").attr("content","http://admin.sharesport.news/upload/1675898603-download (10).jpg");
+        $("#mtimage").attr("content","https://admin.sharesport.news/upload/1675898603-download (10).jpg");
     });
     (function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
@@ -66,7 +66,7 @@
             //=====articles=========
             getArticles(){
                
-            axios.get("http://admin.sharesport.news/api/article/"+this.id).then((res)=>{
+            axios.get("https://admin.sharesport.news/api/article/"+this.id).then((res)=>{
                 localStorage.shareid =res.data[0].id.toString();
                 localStorage.sharetitle =res.data[0].title.toString();
                 localStorage.sharedetail =res.data[0].detail.toString();

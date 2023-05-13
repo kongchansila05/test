@@ -35,7 +35,7 @@
             },
             //=====articles=========
             getPopular(){
-            axios.get("http://admin.sharesport.news/api/popular/"+this.id).then((res)=>{
+            axios.get("https://admin.sharesport.news/api/popular/"+this.id).then((res)=>{
                 this.articles = res.data;
             }).catch(function (error) {
                 console.error(error);

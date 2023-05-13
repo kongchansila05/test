@@ -38,7 +38,7 @@
             },
             //=====video=========
             getvideo(){
-                const url = "http://admin.sharesport.news/api/highlight/"+this.id
+                const url = "https://admin.sharesport.news/api/highlight/"+this.id
             //    const headers= {
             //     "Access-Control-Allow-Origin": "*",
             //     "Access-Control-Allow-Methods": "GET, POST, PATCH, PUT, DELETE, OPTIONS",

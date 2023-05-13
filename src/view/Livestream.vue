@@ -32,7 +32,7 @@ const axios = require("axios");
   methods: {
     //=====Livestream=========
     getlivestream(){
-      axios.get("http://admin.sharesport.news/api/livestream").then((res)=>{
+      axios.get("https://admin.sharesport.news/api/livestream").then((res)=>{
         if(res.data.status == true){
           this.livestatus = true
           this.livestreams = res.data.data;
@@ -44,7 +44,7 @@ const axios = require("axios");
     //=====the-end=========
     //=====Popular=========
     getPopular(){
-      axios.get("http://admin.sharesport.news/api/popular").then((res)=>{
+      axios.get("https://admin.sharesport.news/api/popular").then((res)=>{
         this.popular = res.data;
       }).catch(function (error) {
           console.error(error);
@@ -52,7 +52,7 @@ const axios = require("axios");
     },
     //=====article=========
     getarticle(){
-        axios.get("http://admin.sharesport.news/api/article").then((res)=>{
+        axios.get("https://admin.sharesport.news/api/article").then((res)=>{
         this.articles = res.data;
       }).catch(function (error) {
           console.error(error);

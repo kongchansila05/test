@@ -36,7 +36,7 @@
             },
             //=====livestream=========
             getlivestream(){
-            axios.get("http://admin.sharesport.news/api/livestream/"+this.id).then((res)=>{
+            axios.get("https://admin.sharesport.news/api/livestream/"+this.id).then((res)=>{
                 this.livestream = res.data;
             }).catch(function (error) {
                 console.error(error);
